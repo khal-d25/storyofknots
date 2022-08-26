@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+#mainContainer{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ height: 100vh;
+ flex-direction: row;
+ /* background-color: #61352d53; */
+}
+
+#card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 450px;
+    height: 400px;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    color: white;
+    border: 1px solid white;
+    margin: 5%;
+}
+
+
+
+#top{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    margin-top: 50px;
+}
+
+#comingSoon{
+    height: 40px;
+    font-size: 40px;
+}
+
+
+
+
+
+#bottom{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    font-size: x-large;
+}
+
+#bottom i{
+    margin: 2%;
+}
+
+#mid{
+    display: flex;
+    width: 100%;
+}
+
+
+#fform{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#submitBtn{
+    width: 40%;
+    margin:5% auto;
+}
+
+#inputDiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    
+}
+
+.fourty{
+    width: 80%;
+    margin: 2% auto;
+    
+}
+
+
+
+
+
+
+#mid{
+    flex-grow: 2;
+}
+
+
+#backsMain{
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    flex-direction: row;
+    
+}
+
+#two{
+    width: 60%;
+    height: 100vh;
+    background: url('/Atts/traditional-macrame-composition-indoors.jpg') no-repeat;
+    background-size: 60vw 100vh;
+    box-shadow: 10px 10px 10px black;
+}
+
+#one{
+    width: 40%;
+    height: 100vh;
+    background-color: blueviolet;
+    background: url('/Atts/logo\ concepts-04.png') no-repeat center;
+    background-size: 40vw;
+    
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    #card{
+        width: 80%;
+        height: 60%;
+    }
+
+
+    #comingSoon{
+        font-size: 30px;
+    }
+
+    #backsMain{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100%;
+        
+    }
+    
+    #two{
+        width: 100vw;
+        height: 50vh;
+        background-size: 100vw 100vh;
+    }
+    
+    #one{
+        width: 100vw;
+        height: 50vh;
+        background-size: 80vw;
+        
+    }
+  }
