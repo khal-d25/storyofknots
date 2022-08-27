@@ -4,162 +4,170 @@
     box-sizing: border-box;
 }
 
-
+html,body,#root,#mainContainer{
+    height: 100%;
+}
 
 #mainContainer{
- display: flex;
- justify-content: center;
- align-items: center;
- width: 100%;
- height: 100vh;
- flex-direction: row;
- /* background-color: #61352d53; */
+    display: flex;
+    flex-direction: column;
+}
+
+#top{
+    flex-grow: 1.5;
+    display: flex;
+    width: 100%;
+    background: url('./Atts/logo.png') center no-repeat;
+    background-size: 400px 400px;
+    
+}
+
+
+
+#header{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+#bottom{
+    flex-grow: 1;
+    background: url('./Atts/handmade-macrame-pattern-close-up-macrame-braiding-cotton-threads-wooden-table-female-hobby-eco-friendly-modern-knitting-diy-natural-decoration-concept-interior-copy-space.jpg') no-repeat;
+    background-size: 100%;
+    border-radius: 15px 15px;
+    color: white;
+}
+
+#bottomMain{
+    width: 100%;
+    height: 100%;
+    background-color: #00808093;
+    border-radius: 15px 15px 0 0;
+    /* box-shadow: 20px -5px 30px; */
+
+}
+
+#topRight{
+    
+    display: flex;
+    width: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+
+i{
+    margin: 2%;
+}
+
+#icons{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+input{
+    border: 1px solid white;
+    /* border-radius: 5px; */
+    background-color: transparent;
+    color: white;
+    margin: 2px;
+    
+    
+}
+
+input::placeholder{
+    color: white;
 }
 
 #card{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    height: 100%;
+    justify-content: space-between;
     align-items: center;
-    width: 450px;
-    height: 400px;
-    backdrop-filter: blur(4px);
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+
+}
+
+form{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#inputsDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 60%;
+}
+
+.cDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.sDivs{
+    width: 60%;
+    /* height: 20px; */
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    
+}
+
+button{
+    width: 20%;
+    height: 40px;
+    margin: auto;
+    background-color: transparent;
     color: white;
     border: 1px solid white;
-    margin: 5%;
+    border-radius: 5px;
 }
 
-
-
-#top{
+#soon{
     display: flex;
     flex-direction: column;
-    margin: 2%;
-    margin-top: 50px;
-}
-
-#comingSoon{
-    height: 40px;
     font-size: 40px;
+    height: 50px;
+    line-height: 1;
 }
 
-
-
-
-
-#bottom{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    font-size: x-large;
+#soon div{
+    flex-grow: 1;
 }
 
-#bottom i{
-    margin: 2%;
-}
+@media only screen and (max-width: 600px){
+    #top{
+    background-size: 250px 250px;
 
-#mid{
-    display: flex;
-    width: 100%;
-}
-
-
-#fform{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#submitBtn{
-    width: 40%;
-    margin:5% auto;
-}
-
-#inputDiv{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    
-    
-}
-
-.fourty{
-    width: 80%;
-    margin: 2% auto;
-    
-}
-
-
-
-
-
-
-#mid{
-    flex-grow: 2;
-}
-
-
-#backsMain{
-    display: flex;
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    flex-direction: row;
-    
-}
-
-#two{
-    width: 60%;
-    height: 100vh;
-    background: url('/Atts/traditional-macrame-composition-indoors.jpg') no-repeat;
-    background-size: 60vw 100vh;
-    box-shadow: 10px 10px 10px black;
-}
-
-#one{
-    width: 40%;
-    height: 100vh;
-    background-color: blueviolet;
-    background: url('/Atts/logo\ concepts-04.png') no-repeat center;
-    background-size: 40vw;
-    
-}
-
-
-
-@media only screen and (max-width: 600px) {
-    #card{
-        width: 70%;
-        height: 60%;
     }
 
-
-    #comingSoon{
-        font-size: 30px;
+    #soon{
+        font-size: 20px;
     }
 
-    #backsMain{
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-        height: 100%;
-        
+    #till{
+        font-size: 10px;
     }
-    
-    #two{
-        width: 100vw;
-        height: 50vh;
-        background-size: 100vw 100vh;
+
+    #bottom{
+        background-size: 100% 100%;
     }
-    
-    #one{
-        width: 100vw;
-        height: 50vh;
-        background-size: 80vw;
-        
-    }
-  }
+}
+
+
+
+
+
+
+
+

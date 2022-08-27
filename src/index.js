@@ -4,7 +4,7 @@ import App from './Components/App'
 
 
 
-const rootEl = document.querySelector('#root')
 
+const rootEl = document.querySelector('#root')
 
 ReactDOM.createRoot(rootEl).render(<App/>)

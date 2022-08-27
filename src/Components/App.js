@@ -1,52 +1,52 @@
 import React from "react";
-import './app.css'
+import  './app.css'
+// import { ReactComponent as Pot } from './Atts/plant-pot-svgrepo-com.svg';
 
 
 const App = ()=>{
+
+
     return(
         <div id="mainContainer">
-            <div id="backsMain">
-                <div id="one"></div>
-                <div id="two"></div>
-
+            <div id="top">
+            {/* <div id="pot"><Pot/></div> */}
+                <div id="header">
+                    <div id="sok">
+                    storyofknots.com
+                    </div>
+                    <div id="topRight">
+                        <div>follow us</div>
+                        <div id="icons">
+                        <i className="fa-brands fa-instagram"></i>
+                        <i className="fa-brands fa-twitter"></i>
+                        <i className="fa-brands fa-whatsapp"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div id="card" className="ui card">
-                
-                <div id="top">
-                    <div id="comingSoon">Coming Soon</div>
-                    <div id="line">Till then, let us reach out to you.</div>
-                </div>
-                <div id="mid">
-                    <form id="fform">
-                        <div id="inputDiv">
-                        <div className="ui input focus fourty">
-                            <input className="trans" type="text" placeholder="Name . . ."/>
+
+            <div id="bottom">
+                <div id="bottomMain">
+                    <div id="card">
+                        <div>
+
+                        <div id="soon" className="cDiv">We're Coming soon!</div>
+                        <div id="till" className="cDiv">Till then, Let us contact you!</div>
                         </div>
-                        <div className="ui input focus fourty">
-                            <input type="text" placeholder="Email . . ."/>
-                        </div>
-                        <div className="ui input focus fourty">
-                            <input type="number" placeholder="Contact . . ."/>
-                        </div>
-                        </div>
-                        <div id="submitBtn" class="ui animated button">
-                            <div className="visible content">Submit</div>
-                            <div className="hidden content">
-                                <i class="right arrow icon"></i>
+                        <form>
+                            <div id="inputsDiv">
+                                <input className="sDivs" type='text' placeholder="Name . . ."/>
+                                <input className="sDivs" type='text' placeholder="Email . . ."/>
+                                <input className="sDivs" type='number' placeholder="Contact"/>
                             </div>
-                        </div>
-                    </form>
+                            <button id="submit">Submit</button>
+                        </form>
+                    </div>
                 </div>
-                <div id="bottom">
-                <i className="fa fa-instagram"></i>
-                <i className="fa fa-whatsapp"></i>
-                <i className="fa fa-envelope"></i>
-                </div>
+
             </div>
         </div>
     )
 }
-
 
 export default App;
