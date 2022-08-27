@@ -71,7 +71,7 @@
     display: flex;
     width: 100%;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 #submitBtn{
@@ -133,7 +133,7 @@
 
 @media only screen and (max-width: 600px) {
     #card{
-        width: 80%;
+        width: 70%;
         height: 60%;
     }
 
