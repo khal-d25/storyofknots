@@ -23,6 +23,8 @@ const App = ()=>{
                         </div>
                     </div>
                 </div>
+                <div id="soon">We're Coming soon!</div>
+
             </div>
 
             <div id="bottom">
@@ -30,7 +32,6 @@ const App = ()=>{
                     <div id="card">
                         <div>
 
-                        <div id="soon" className="cDiv">We're Coming soon!</div>
                         <div id="till" className="cDiv">Till then, Let us contact you!</div>
                         </div>
                         <form>
