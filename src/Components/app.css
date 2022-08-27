@@ -160,7 +160,9 @@ button{
     }
 
     #bottom{
+        background: url('./Atts/IMG-8489.JPG') no-repeat;
         background-size: 100% 100%;
+
     }
 }
 
