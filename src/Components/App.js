@@ -5,6 +5,18 @@ import  './app.css'
 
 const App = ()=>{
 
+    const onBottomClick = (e)=>{
+        console.log(e)
+        const top = document.querySelector('#top');
+        const bottom = document.querySelector('#bottom');
+        top.style.flexGrow = '2';
+        bottom.style.flexGrow = '9';
+        top.style.backgroundSize = '110px 110px';
+        top.style.backgroundPosition = 'left center';
+        const soon  = document.querySelector('#soon');
+        soon.style.opacity = '0';
+
+    }
 
     return(
         <div id="mainContainer">
@@ -27,7 +39,7 @@ const App = ()=>{
 
             </div>
 
-            <div id="bottom">
+            <div onClick={(e)=>{onBottomClick(e)}} id="bottom">
                 <div id="bottomMain">
                     <div id="card">
                         <div>
